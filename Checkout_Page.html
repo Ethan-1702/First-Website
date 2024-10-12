@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Checkout_Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+
+  <body>
+    <table class="Checkout">
+      <thead>
+      <tr>
+        <th class="Product_Food">
+         Product 
+        </th>
+        <th class="quantity">
+          Quantity
+        </th>
+        <th class="subtotal">
+          Subtotal
+        </th>
+      </tr>
+    </thead>
+    <tbody id="Food_Tables">
+    <tr>
+        <td class="Product_Food">
+          <img src="PhotoMie.jpeg" alt="Mie" class="Menu_img">
+          <div>
+            Mie
+          </p>
+          <h5>
+            <p>Harga: Rp.<span id="harga_mie_per_porsi">20000</span></p>
+          </h5>
+          <a class="remove_button"onclick="remove(this)">Remove</a>
+          </div>
+        </td>
+        <td class="quantity">
+          <input id="input_mie" name="input_mie" type="number" value="1" min="1">
+        </td>
+        <td class="subtotal">
+          Rp.<span id="subtotal_mie">20000</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="Product_Food">
+          <img src="PhotoKuah.webp" alt="Kuah" class="Menu_img">
+          <div>
+          <p>
+            Kuah
+          </p>
+          <h5>
+            Harga=Rp<span id="harga_kuah_per_porsi">5000</span>
+          </h5>
+          <a class="remove_button"onclick="remove(this)">Remove</a>
+          </div>
+        </td>
+        <td class="quantity">
+          <input id="input_kuah" type="number" value="1" min="1">
+        </td>
+        <td class="subtotal">
+          Rp.<span id="subtotal_kuah">5000</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="Product_Food">
+          <img src="soto betawi.jpeg" alt="Soto Betawi" class="Menu_img">
+          <div>
+          <p>
+            Soto Betawi
+          </p>
+          <h5>
+            Harga=Rp.<span id="harga_sotobetawi_per_porsi">25000</span>
+          </h5>
+          <a class="remove_button"onclick="remove(this)">Remove</a>
+          </div>
+        </td>
+        <td class="quantity">
+          <input id="input_sotobetawi" type="number" value="1" min="1">
+        </td>
+        <td class="subtotal">
+          Rp.<span id="subtotal_sotobetawi">25000</span>
+        </td>
+      </tr>
+    </tbody>  
+    </table>
+    <table class="Checkout">
+      <tr id="total_semua">
+        <td class="Product_Food" id="total_s">
+          <p>
+            Total:
+          </p>
+          </p>
+        </td>
+        <td class="quantity" id="empty">
+
+        </td>
+        <td class="subtotal" id="t_sm">
+          <p>
+            Rp.<span id="total_semua_number">10000</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
